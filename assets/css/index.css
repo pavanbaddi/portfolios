@@ -1,0 +1,169 @@
+#projects > .items {
+  box-sizing: border-box;
+}
+
+.menu-section {
+  height: 10%;
+  background-color: #00539c;
+}
+.menu-section .tab-container {
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+}
+.menu-section .tab-container .tab div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.menu-section .tab-container .tab div a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: inline-block;
+  padding-left: 5px;
+  width: 100%;
+  text-align: center;
+}
+.menu-section .tab-container .tab div a span {
+  font-weight: 400;
+}
+.menu-section .tab-container .tab.active {
+  background-color: #FFFFFF;
+}
+.menu-section .tab-container .tab.active a, .menu-section .tab-container .tab.active a i {
+  color: #000000;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .menu-section .tab-container {
+    display: grid;
+    grid-auto-flow: column;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .menu-section .tab-container .tab {
+    min-width: 100px;
+    height: 100%;
+  }
+  .menu-section .tab-container .tab a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .menu-section .tab-container .tab a span {
+    display: none;
+  }
+  .menu-section .tab-container .tab a i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+.me-section {
+  background-color: #ffd662;
+  height: 20%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.me-section .inner {
+  display: grid;
+  grid-template-columns: 8% 60% 30%;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 10px;
+}
+.me-section .inner .pic-wrapper {
+  box-sizing: border-box;
+}
+.me-section .inner .pic-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.me-section .inner .me-content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.me-section .inner .me-content p {
+  font-weight: 400;
+}
+.me-section .inner .contact-wrapper {
+  height: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.me-section .inner .contact-wrapper div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.me-section .inner .contact-wrapper div a span {
+  font-weight: 400 !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .me-section {
+    height: 100%;
+  }
+  .me-section .inner {
+    padding-top: 15px;
+    display: block;
+  }
+  .me-section .inner .pic-wrapper {
+    border: none;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 10px;
+    margin: auto;
+  }
+  .me-section .inner .me-content {
+    padding: 10px 15px;
+  }
+  .me-section .inner .contact-wrapper {
+    padding: 10px 15px;
+  }
+}
+#tech-stack .items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+#tech-stack .items .item {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  text-align: center;
+  padding: 5px 0;
+}
+#tech-stack .items .item div img {
+  width: 150px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#tech-stack .items .item div p {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  #tech-stack .items {
+    grid-template-columns: repeat(2, 1fr);
+    height: 85%;
+    overflow-y: scroll;
+  }
+}/*# sourceMappingURL=index.css.map */

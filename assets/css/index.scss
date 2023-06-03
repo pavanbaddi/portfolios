@@ -1,0 +1,43 @@
+@import "./sections/projects";
+@import "./sections/menu-section";
+@import "./sections/me-section";
+
+#tech-stack{
+    .items{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+
+        .item{
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            text-align: center;
+            padding: 5px 0;
+
+            div{
+                
+                img{
+                    width: 150px;
+                    height: 80px;
+                    object-fit: contain;
+                }
+            }
+
+            div{
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 300px)  and (max-width: 600px) {
+    #tech-stack{
+        .items{
+            grid-template-columns: repeat(2, 1fr);
+            height: 85%;
+            overflow-y: scroll;
+        }
+    }
+}

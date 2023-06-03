@@ -1,0 +1,26 @@
+.content-container {
+  width: 100%;
+  height: 64%;
+  box-sizing: border-box;
+}
+.content-container > section {
+  display: none;
+}
+.content-container > section.active {
+  display: block;
+  padding: 20px;
+  height: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .content-container {
+    height: 84%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  .content-container {
+    height: 84%;
+  }
+}/*# sourceMappingURL=content-container.css.map */

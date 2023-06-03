@@ -1,0 +1,42 @@
+@import "./vars";
+
+.btn{
+    text-decoration: none;
+    color: $black-color;
+    background-color: $white-color;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 2px 4px;
+
+    &.btn-pill{
+        font-size: 14px;
+    }
+
+    &.btn-hireme{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 3px 15px;
+    }
+}
+
+
+.rounded-button{
+    text-decoration: none;
+    color: $black-color;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: $white-color;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    box-shadow: 1px 1px 1px $black-color;
+}
+
+.floating-button{
+    @extend .rounded-button;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
