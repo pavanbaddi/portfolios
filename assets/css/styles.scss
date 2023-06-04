@@ -1,36 +1,6 @@
 @import "./buttons";
 @import "./vars";
 
-// html {
-//     --s: 100px; /* control the size */
-//     --c1: #F8B195;
-//     --c2: #355C7D;
-    
-//     --_g: 
-//        var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-//        var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
-//     background:
-//       radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-//       radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-//       var(--c1);
-//     background-size: var(--s) var(--s);
-// }
-// html {
-//     --s: 100px; /* control the size */
-//     --c1: #0066b2;
-//     --c2: #FFFFFF;
-//     --c3: #00308F;
-    
-//     --_g: 
-//        var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-//        var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
-//     background:
-//       radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-//       radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-//       var(--c1);
-//     background-size: var(--s) var(--s);
-// }
-
 html {
     --s: 84px; /* control the size*/
     --c1: #f2f2f2;
@@ -88,13 +58,7 @@ ul{
 
 .gradient{
     &.gradient--project{
-        // background: #00308F;
         background: #13274F;
-        // background: -moz-linear-gradient(112deg, rgba(3,3,3,1) 0%, rgba(37,55,116,1) 49%, rgba(33,20,140,1) 100%);
-        // background: -webkit-linear-gradient(112deg, rgba(3,3,3,1) 0%, rgba(37,55,116,1) 49%, rgba(33,20,140,1) 100%);
-        // background: linear-gradient(112deg, rgba(3,3,3,1) 0%, rgba(37,55,116,1) 49%, rgba(33,20,140,1) 100%);
-        // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030303",endColorstr="#21148c",GradientType=1);
-        
     }
 }
 
@@ -113,7 +77,7 @@ ul{
         height: 100%;
         
         .section-heading{
-            padding-bottom: 30px;
+            padding-bottom: 10px;
         }
     }
 }
