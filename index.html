@@ -1,441 +1,704 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavan Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/about-me.css">
-    <link rel="stylesheet" href="./assets/css/content-container.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-
-    <link rel="stylesheet" href="./assets/plugins/owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/plugins/owl-carousel/assets/owl.theme.default.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pavan | Portfolio</title>
+  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="site-container">
-        <div class="inner">
-            <div class="me-section hidden-sm hidden-on-tabs">
-                <div class="inner" >
-                    <div class="pic-wrapper">
-                        <img src="./assets/images/me.png" alt="">
-                    </div>
+<!-- header -->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+            <a class="navbar-brand" href="index.html">
+              <span class="fa fa-laptop"></span> Pavan Baddi
+            </a>
+          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+              data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+              </span>
+          </button>
 
-                    <div class="me-content">
-                        <h2>Hi, I'm Pavan</h2>
-                        <p>I am an active learner who stays updated with the latest industry trends and technologies. With excellent problem-solving skills and a commitment to delivering high-quality work, I consistently strive to exceed expectations and drive successful project outcomes.</p>
-                    </div>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+  </div>
+</header>
+<!-- //header -->
 
-                    <div class="contact-wrapper">
-                        <div>
-                            <a href="mail:pavanbaddi911@gmail.com" target="_blank" ><i class="fa-regular fa-envelope"></i>&nbsp;  <span>pavanbaddi911@gmail.com</span></a>
-                        </div>
-                        <div>
-                            <a href="https://bit.ly/3VEBiqm" target="_blank" ><i class="fa-brands fa-linkedin-in"></i>&nbsp;  <span>LinkedIn</span></a>
-                        </div>
-                        <div>
-                            <a href="https://drive.google.com/file/d/1RcJy4bpopHEdkI4r9JKfcDWrUDxy89I8/view?usp=sharing" target="_blank" class="btn btn-pill btn-hireme" >Hire/Contact Me</a>
-                        </div>
-                    </div>
+<!-- banner section -->
+<section id="home" class="w3l-banner py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
+                <span class="title-small">Hello</span>
+                <h1 class="mb-2 title"> <span>I'm</span> Pavan</h1>
+                <h1 class="mb-4 title"> a <span class="typed-text"></span><span class="cursor">&nbsp</span></h1>
+                <div class="mt-sm-5 mt-4">
+                    <a class="btn btn-primary btn-style mr-2" href="#contact"> Hire Me </a>
+                    <a class="btn btn-outline-primary btn-style mr-2" href="#portfolio"> Portfolio </a>
                 </div>
-            </div>
-            <div class="menu-section">
-                <div class="tab-container">
-                    <div id="tab-about-me" class="tab hidden-on-desktop">
-                        <div>
-                            <a href="javascript:void(0)" onclick="currentSection('about-me')" ><i class="fa-regular fa-user"></i> <span>Me</span></a>
-                        </div>
-                    </div>
-
-                    <div id="tab-projects" class="tab">
-                        <div><a href="javascript:void(0)" onclick="currentSection('projects')" ><i class="fa-solid fa-briefcase"></i> <span>Projects</span></a></div>
-                    </div>
-
-                    <div id="tab-work-experience" class="tab">
-                        <div><a href="javascript:void(0)" onclick="currentSection('work-experience')" ><i class="fa-regular fa-file-lines"></i> <span>Work Experience</span></a></div>
-                    </div>
-                    
-
-                    <div id="tab-porfolios" class="tab">
-                        <div><a href="javascript:void(0)" onclick="currentSection('porfolios')" ><i class="fa-regular fa-folder-open"></i> <span>Porfolios</span></a></div>
-                    </div>
-
-                    <div id="tab-tech-stack" class="tab">
-                        <div><a href="javascript:void(0)" onclick="currentSection('tech-stack')" ><i class="fa-solid fa-cubes"></i> <span>Tech Stack</span></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-container">
-                <section id="about-me" class="gradient gradient--project hidden-on-desktop" >
-                    <h2>Hi I'm Pavan,</h2>
-                    <p>I am an active learner who stays updated with the latest industry trends and technologies. With excellent problem-solving skills and a commitment to delivering high-quality work, I consistently strive to exceed expectations and drive successful project outcomes.</p>
-
-                    <div class="contact-wrapper">
-                        <div>
-                            <a href="mail:pavanbaddi911@gmail.com" target="_blank" ><i class="fa-regular fa-envelope"></i>&nbsp;  <span>pavanbaddi911@gmail.com</span></a>
-                        </div>
-                        <div>
-                            <a href="https://bit.ly/3VEBiqm" target="_blank" ><i class="fa-brands fa-linkedin-in"></i>&nbsp;  <span>LinkedIn</span></a>
-                        </div>
-                        <div>
-                            <a href="https://drive.google.com/file/d/1RcJy4bpopHEdkI4r9JKfcDWrUDxy89I8/view?usp=sharing" target="_blank" class="btn btn-pill btn-hireme" >Hire Me</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="gradient gradient--project" id="projects" >
-                    <div class="section-heading">
-                        <h1 class="text text-white" >Projects</h1>
-                    </div>
-
-                    <div id="projects-carousel" class="items owl-carousel owl-theme">
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading" >
-                                <h2>BookMyChef Online</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>Chef booking IOS/Android app with many options to customize the menu.</li>
-                                    <li>Responsible to converting sketch designs to react components and adding functionality.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div>
-                                        <p><i>React Native</i></p>
-                                    </div>
-                                    <div>
-                                        <a href="https://play.google.com/store/apps/details?id=com.presto.booking.bookmychef" target="_blank" class="btn btn-pill" >
-                                            <i class="fa-solid fa-mobile-screen"></i> Play Store
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading" >
-                                <h2>bmc for Chefs</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>A chef version of above BMC app available in Android/IOS. Where chef's can manage their appointments.</li>
-                                    <li>Apart from development and fixes worked implementation of Push Notifications the chef will receive.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div>
-                                        <p><i>React Native</i></p>
-                                    </div>
-                                    <div>
-                                        <a href="https://play.google.com/store/apps/details?id=com.presto.booking.chefapp" target="_blank" class="btn btn-pill" >
-                                            <i class="fa-solid fa-mobile-screen"></i> Play Store
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading" >
-                                <h2>Crowdfund4u</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>A crowdfunding plaftform, were users can donate to a project. Built from scratch.</li>
-                                    <li>Responsible for building both frontend and backend.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div>
-                                        <p><i>Next JS, Laravel and MySQL</i></p>
-                                    </div>
-                                    <div>
-                                        <a href="https://crowdfund4u.com/" target="_blank" class="btn btn-pill" ><i class="fa-solid fa-globe"></i> Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading" >
-                                <h2>Payungmly Malaysia</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>Online platform for Insurance services and affiliated marketing. Built from scratch.</li>
-                                    <li>Responsible for building both frontend and backend.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div>
-                                        <p><i>Laravel, Javascript and  MySQL</i></p>
-                                    </div>
-                                    <div>
-                                        <a href="https://payungmly.com/" target="_blank" class="btn btn-pill" ><i class="fa-solid fa-globe"></i> Website</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                    </div>
-
-                    <a href="javascript:void(0)" onclick="currentSection('work-experience')" class="floating-button">
-                        Next
-                    </a>
-                </section>
-
-                <section class="gradient gradient--project" id="work-experience" >
-                    <div class="section-heading">
-                        <h1 class="text text-white" >Work Experience - 3.7 Years</h1>
-                    </div>
-
-                    <div id="work-experience-carousel" class="items owl-carousel owl-theme">
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading card-heading--group" >
-                                <h2>Software Engineer (Frontend)</h2>
-                                <div>
-                                    <h4 class="text-right" >Dec 2022 to Present</h4>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>Collaborated with a cross-functional team to develop and maintain high-quality software solutions using React JS, Next JS, and React Native.</li>
-                                    <li>Customization of build-script for building APK and deploying apps</li>
-                                    <li>Designed and implemented efficient and scalable code, ensuring optimal performance and user experience.</li>
-                                    <li>Mentored and guided two junior team members, providing technical guidance, code reviews</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div class="card-section--item-full-width" >
-                                        <p>Worked on tech stack: <i>React JS, React Native, Next JS and Expo</i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading card-heading--group" >
-                                <h2>Software Engineer</h2>
-                                <div>
-                                    <h4 class="text-right">Aug 2017 to April 2018 </h4>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>Worked with the team to handle development and integration tasks such as Database Design, Code</li>
-                                    <li>Participated in daily stand-up meetings, providing updates on progress and actively contributing to team discussions.</li>
-                                    <li>Configuring and Deployment on Linux servers.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div class="card-section--item-full-width" >
-                                        <p>Worked on tech stack: <i>React js, PHP - Laravel, MySQL</i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading card-heading--group" >
-                                <h2>Web Developer</h2>
-                                <div>
-                                    <h4 class="text-right">June 2016 to Aug 2017</h4>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>Creating UI using HTML, CSS, and Javascript.</li>
-                                    <li>Developing E-commerce, Hostel Bookings, Loan Service providers, portfolio websites etc.</li>
-                                    <li>Actively sought learning opportunities and proactively expanded knowledge in software development practices and technologies.</li>
-                                    <li>Making modifications in UI and also working with REST API.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div class="card-section--item-full-width" >
-                                        <p>Worked on tech stack: <i>HTML, CSS, Javascript, PHP, Mysql </i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="javascript:void(0)" onclick="currentSection('porfolios')" class="floating-button">
-                        Next
-                    </a>
-                </section>
-
-                <section class="gradient gradient--project" id="porfolios" >
-                    <div class="section-heading">
-                        <h1 class="text text-white" >Porfolios</h1>
-                    </div>
-
-                    <div id="portfolios-carousel" class="items owl-carousel owl-theme">
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading" >
-                                <h2>Automated Deployment using Python Fabric & Bash</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>A tool for installation of all the packages and libraries to deploy Django App within 10 mins.</li>
-                                    <li>User simply needs to provide server credentials, run a few commands on server and create a zip file which is the project directory.</li>
-                                    <li>This will upload project zip file and also install.sh script, which is executed and will install all the packages</li>
-
-                                </ul>
-                                <div class="card-section">
-                                    <div>
-                                        <p>Tech stack: <i>Python (Fabric package), Bash script</i></p>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href="#" target="_blank" class="btn btn-pill" ><i class="fa-brands fa-github"></i> Github</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item card card--bg-color-1" >
-                            <div class="card-heading" >
-                                <h2>Parceller</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul>
-                                    <li>A logistic app created using Next JS (Typescript), as a part of learning typescript.</li>
-                                    <li>This portfolio is work in progress, completed theme and working on functionality.</li>
-                                    <li>This will have Django framework as backend and MySQL database.</li>
-                                    <li>And deployed on AWS EC2 using Docker.</li>
-                                </ul>
-                                <div class="card-section">
-                                    <div>
-                                        <p>Tech stack: <i>Next JS, Typescript, Docker, Nginx</i></p>
-                                    </div>
-                                    
-                                    <div>
-                                        <a href="#" target="_blank" class="btn btn-pill" ><i class="fa-solid fa-globe"></i> Website</a>
-                                        <a href="#" target="_blank" class="btn btn-pill" ><i class="fa-brands fa-github"></i> Github</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="javascript:void(0)" onclick="currentSection('tech-stack')" class="floating-button">
-                        Next
-                    </a>
-                </section>
-
-                <section class="gradient gradient--project" id="tech-stack" >
-                    <div class="section-heading">
-                        <h1 class="text text-white" >Tech Stacks</h1>
-                    </div>
-
-                    <div class="items" >
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/react-native.png" />
-                            </div>
-                            <div>
-                                <p>React Native</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/reactjs.png" />
-                            </div>
-                            <div>
-                                <p>React JS</p>
-                            </div>
-                        </div>
-
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/nextjs.png" />
-                            </div>
-                            <div>
-                                <p>Next JS</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/javascript.png" />
-                            </div>
-                            <div>
-                                <p>Javascript</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/php.png" />
-                            </div>
-                            <div>
-                                <p>PHP</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/laravel.png" />
-                            </div>
-                            <div>
-                                <p>Laravel</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/python.png" />
-                            </div>
-                            <div>
-                                <p>Python</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/django.png" />
-                            </div>
-                            <div>
-                                <p>Django</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/codeigniter.png" />
-                            </div>
-                            <div>
-                                <p>Codeigniter</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/mysql.jpg" />
-                            </div>
-                            <div>
-                                <p>MySQL</p>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div>
-                                <img src="./assets/images/amazon-ec2.png" />
-                            </div>
-                            <div>
-                                <p>AWS EC2</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
     </div>
-    <script src="./assets/plugins/jquery/jquery-3.7.0.min.js"></script>
-    <script src="./assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script src="./assets/plugins/owl-carousel/jquery.mousewheel.min.js"></script>
-    <script src="./assets/js/style.js"></script>
-    <script src="./assets/plugins/fontawesome.min.js"></script>
+</section>
+<!-- //banner section -->
+
+<!-- home page about section -->
+<section class="w3l-index3" id="about">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="position-relative">
+                        <img src="assets/images/me.png" alt="" class="radius-image img-fluid">
+
+                        <a href="#download" class="btn btn-style btn-primary mt-2 btn-block">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-lg-0 mt-5">
+                    <h5 class="title-small mb-2">Who am i?</h5>
+                    <h3 class="title-big">I'm Pavan</h3>
+                    <p class="mt-4">I am an active learner who stays updated with the latest industry trends and technologies. With excellent problem-solving skills and a commitment to delivering high-quality work, I consistently strive to exceed expectations and drive successful project outcomes.</p>
+
+                    <div class="mt-2" >
+                        <h4 class="title-small">Tech Skills</h4>
+                        <div class="tech-skills-items">
+                            <div>
+                                <div>
+                                    <img src="./assets/images/reactjs.png" alt="React JS" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>React JS</p>
+                                </div>
+                            </div>
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/react-native.png" alt="React Native" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>React Native</p>
+                                </div>
+                            </div>
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/javascript.png" alt="Javascript" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>Javascript</p>
+                                </div>
+                            </div>
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/php.png" alt="PHP" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>PHP</p>
+                                </div>
+                            </div>
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/laravel.png" alt="Laravel" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>Laravel</p>
+                                </div>
+                            </div>
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/python.png" alt="Python" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>Python</p>
+                                </div>
+                            </div>
+            
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/django.png" alt="Django" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>Django</p>
+                                </div>
+                            </div>
+            
+            
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/mysql.jpg" alt="MySQL" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+            
+            
+            
+                            <div>
+                                <div>
+                                    <img src="./assets/images/amazon-ec2.png" alt="Amazon ec2" class="img-responsive" >
+                                </div>
+                                <div>
+                                    <p>AWS EC-2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w3l-projects" >
+    <div class="blog py-5" id="projects">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">Projects</h5>
+            <div class="row mt-5">
+                <div class="col-md-12 mx-auto pr-2">
+                    <div class="owl-two owl-carousel owl-theme">
+                        <div class="item">
+                            <h2>BookMyChef Online</h2>
+                            <div class="mt-2" >
+                                <div>
+                                    <ul class="list-with-dots" >
+                                        <li>Chef booking IOS/Android app with many options to customize the menu.</li>
+                                        <li>Responsible to converting sketch designs to react components and adding functionality.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-2" >
+                                    <p class="text-sm" ><i>React Native</i></p>
+                                </div>
+
+                                <div class="mt-2" >
+                                    <a href="https://play.google.com/store/apps/details?id=com.presto.booking.bookmychef" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-mobile"></i> Play Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <h2>Farmtheory</h2>
+                            <div class="mt-2" >
+                                <div>
+                                    <ul class="list-with-dots" >
+                                        <li>B2B app with many buying vegetables in large scale.</li>
+                                        <li>Also have dedicated app for delivery agents.</li>
+                                        <li>Worked on cart and ordering journey</li>
+                                        <li>Setting up of Push Nofitication on frontend when a order status is changed it is communicated using Push Notification.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-2" >
+                                    <p class="text-sm" ><i>React, React Native</i></p>
+                                </div>
+
+                                <div class="mt-2" >
+                                    <a href="https://play.google.com/store/apps/details?id=com.presto.retail.farmtheory" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-mobile"></i> Play Store
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://www.farmtheory.in/index.html" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-globe"></i> Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <h2>Crowdfund4u</h2>
+                            <div class="mt-2" >
+                                <div>
+                                    <ul class="list-with-dots" >
+                                        <li>A crowdfunding plaftform, were users can donate to a project. Built from scratch.</li>
+                                        <li>Responsible for building both frontend and backend.</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-2" >
+                                    <p class="text-sm" ><i>Next JS, Laravel, MySQL</i></p>
+                                </div>
+
+                                <div class="mt-2" >
+                                    <a href="https://crowdfund4u.com/" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-globe"></i> Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <h2>Payungmly Malaysia</h2>
+                            <div class="mt-2" >
+                                <div>
+                                    <ul class="list-with-dots" >
+                                        <li>Online platform for Insurance services and affiliated marketing. Built from scratch.</li>
+                                        <li>Responsible for building both frontend and backend.</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-2" >
+                                    <p class="text-sm" ><i>Laravel, Javascript, MySQL</i></p>
+                                </div>
+
+                                <div class="mt-2" >
+                                    <a href="https://payungmly.com/" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-globe"></i> Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w3l-portfolio" >
+    <div class="blog py-5" id="portfolio">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">Portfolio</h5>
+            <div class="row mt-5">
+                <div class="col-md-12 mx-auto pr-2">
+                    <div class="owl-two owl-carousel owl-theme">
+                        <div class="item">
+                            <h2>Automated Deployment using Python Fabric & Bash</h2>
+                            <div class="mt-2" >
+                                <div>
+                                    <ul class="list-with-dots" >
+                                        <li>A tool for installation of all the packages and libraries to deploy Django App within 10 mins.</li>
+                                        <li>User simply needs to provide server credentials, run a few commands on server and create a zip file which is the project directory.</li>
+                                        <li>This will upload project zip file and also install.sh script, which is executed and will install all the packages</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-2" >
+                                    <p class="text-sm" ><i>Python (Fabric package), Bash script</i></p>
+                                </div>
+
+                                <div class="mt-2" >
+                                    <a href="https://play.google.com/store/apps/details?id=com.presto.booking.bookmychef" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-github"></i> Play Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <h2>Parceller</h2>
+                            <div class="mt-2" >
+                                <div>
+                                    <ul class="list-with-dots" >
+                                        <li>A logistic app created using Next JS (Typescript), as a part of learning typescript.</li>
+                                        <li>This portfolio is work in progress, completed theme and working on functionality.</li>
+                                        <li>This will have Django framework as backend and MySQL database.</li>
+                                        <li>And deployed on AWS EC2 using Docker.</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mt-2" >
+                                    <p class="text-sm" ><i>Next JS, Typescript, Docker, Nginx</i></p>
+                                </div>
+
+                                <div class="mt-2" >
+                                    <a href="" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-globe"></i> Website
+                                    </a>
+                                    <a href="" target="_blank" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-github"></i> Play Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="w3l-contact-1 py-5">
+    <div class="contacts-9 py-lg-5 py-md-4">
+        <div class="container">
+            <div class="d-grid contact-view">
+                <div class="cont-details">
+                    <div class="cont-top">
+                        <div class="cont-left text-center">
+                            <span class="fa fa-phone text-primary"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Call Me</h6>
+                            <p><a href="tel:+44 99 555 42">+91 88922 79412</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up">
+                        <div class="cont-left text-center">
+                            <span class="fa fa-envelope-o text-primary"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Email Me</h6>
+                            <p><a href="mailto:example@mail.com" class="mail">pavanbaddi911@mail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up">
+                        <div class="cont-left text-center">
+                            <span class="fa fa-map-marker text-primary"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Location</h6>
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-content-9">
+                    <div class="container py-3">
+                        <h6 class="title-small">Get in touch</h6>
+                        <div class="mt-4" >
+                           <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
+                           <a href="#contact" class="btn btn-style btn-primary mr-2">Hire Me </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+  <!-- move top -->
+  <div class="w3l-footer" id="movetop">
+      <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;" >
+        <span class="fa fa-angle-up"></span>
+      </button>
+  </div>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+</section>
+<!-- //Footer -->
+
+<!-- all js scripts and files here -->
+
+<script src="assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+<script src="assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+
+<!-- /typig-text-->
+<script>
+  const typedTextSpan = document.querySelector(".typed-text");
+  const cursorSpan = document.querySelector(".cursor");
+
+  const textArray = ["Software Engineer"];
+  const typingDelay = 200;
+  const erasingDelay = 10;
+  const newTextDelay = 100; // Delay between current and next text
+  let textArrayIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+      typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      cursorSpan.classList.remove("typing");
+      setTimeout(erase, newTextDelay);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      // add class 'typing' if there's none
+      if (!cursorSpan.classList.contains("typing")) {
+        cursorSpan.classList.add("typing");
+      }
+      typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
+      charIndex--;
+      setTimeout(erase, erasingDelay);
+    } else {
+      cursorSpan.classList.remove("typing");
+      textArrayIndex++;
+      if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+      setTimeout(type, typingDelay);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
+  });
+</script>
+<!-- //typig-text-->
+
+<!-- services owlcarousel -->
+<script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for services -->
+<script>
+  $(document).ready(function () {
+    $('.owl-two').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        700: {
+          items: 1,
+          nav: false
+        },
+        1090: {
+          items: 2,
+          nav: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for services -->
+
+<!-- script for blog post slider -->
+<script>
+  $(document).ready(function () {
+    $('.owl-blog').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        480: {
+          items: 1,
+          nav: true
+        },
+        700: {
+          items: 1,
+          nav: true
+        },
+        1090: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for blog post slider -->
+
+<!-- script for tesimonials carousel slider -->
+<script>
+  $(document).ready(function () {
+    $("#owl-demo1").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        736: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 2,
+          nav: false,
+          loop: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for tesimonials carousel slider -->
+
+<!-- video popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+<!-- //video popup -->
+
+<!-- stats number counter-->
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.js"></script>
+<script>
+  $('.counter').countUp();
+</script>
+<!-- //stats number counter -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
+<script src="assets/js/jquery-1.7.2.js"></script>
+<script src="assets/js/jquery.quicksand.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+
 </body>
+
 </html>

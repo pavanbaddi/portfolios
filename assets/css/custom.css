@@ -1,0 +1,53 @@
+.list-with-dots{
+    margin-left: 20px;
+}
+
+.list-with-dots > li{
+    list-style-type: disc!important;
+}
+
+
+.text-sm{
+    font-size: 14px;
+}
+
+.row--items-center{
+    align-items: center;
+}
+
+.w3l-projects, .w3l-skills, .w3l-grid-quote, .w3l-contact-1{
+    background: var(--bg-light);
+}
+
+.tech-skills-items{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.tech-skills-items > div{
+    width: 80px;
+    box-sizing: border-box;
+}
+
+.tech-skills-items > div img{
+    padding-top: 15px;
+    height: 50px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.tech-skills-items > div p{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 300px)  and (max-width: 600px) {
+    .tech-skills-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 601px)  and (max-width: 950px) {
+    
+}
