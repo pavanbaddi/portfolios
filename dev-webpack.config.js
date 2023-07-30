@@ -22,5 +22,10 @@ module.exports = {
     },
     externals: {
         "$": "$"
+    },
+    devServer: {
+        static: path.resolve(__dirname, "dist"),
+        compress: true,
+        port: 3000
     }
 }
