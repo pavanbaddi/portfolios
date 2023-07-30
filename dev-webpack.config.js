@@ -20,10 +20,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
     },
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: require.resolve("jquery"),
-            jQuery: require.resolve("jquery"),
-        })
-    ]
+    externals: {
+        "$": "$"
+    }
 }
